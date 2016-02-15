@@ -1,0 +1,381 @@
+/*=============================================================================================================*\
+
+  * Project Name:       Dev School 
+  * Project URI:           www.thedev.school
+  * Description:          The official Dev School website.
+  * Author:                 Dev-Shop Team
+  * Author URI            www.shop.thedev.school
+  *
+  *
+  * DEVELOPERS GUIDE:
+  * ----------------------------------------------------------------------------------------------------------
+  *
+  * FRAMEWORK OVERWRITES
+  * ----------------------------------------------------------------------------------------------------------
+  * This project utilizes Version 4.0.0 of the Bootstrap framework for it's layout structure.
+  * Use the below naming convention when overwriting Bootstraps classes and id's
+  * 
+  * * Prefix all overwrite classes with the intitials 'dso' followed by a hyphen. 'dso' stands for 
+  *   'dev-shop-overwirtes'
+  * 
+  * * .dso-(class-name-to-overwrite) or #dso-(id-to-overwrite)
+  * ----------------------------------------------------------------------------------------------------------
+  *
+  *
+  * CUSTOM CLASSES
+  * ----------------------------------------------------------------------------------------------------------
+  * Use the below naming convention when writing custom classes and id's
+  * 
+  * * Prefix all custom classes with the initials 'dsc' followed by a hyphen. 'dsc' stands for 'dev-shop-custom'
+  *
+  * * .dsc-(custom-class-name) or #dso-(custom-id)
+  * ----------------------------------------------------------------------------------------------------------
+  * 
+  *
+  * PROJECT COLOR SCHEME
+  * ----------------------------------------------------------------------------------------------------------
+  * Below are the official colors for the dev-school-website
+  * 
+  * #ff5d5d - Primary
+  * #45d459 - Highlights
+  * #38404a - Body Headers
+  * #30e83f - Banner Text
+  * #6c6c6c - Body Text
+  * #c0bdbd - Place Holder Text
+  * #abacac - Footer Text
+  * #192028 - Footer Background 2
+  * #99a0a8 - Footer Text Grey
+  * #ff6868 - Footer Text Red
+  * ----------------------------------------------------------------------------------------------------------
+  *
+  *
+  *
+  * TABLE OF CONTENT
+  *-----------------------------------------------------------------------------------------------------------
+  * 1.1 - Resets
+  * 2.1 - Framework Overwrites
+
+        2.1.1 - Navbar
+        2.1.2 - Buttons
+
+  * 3.1 - Custom Styles
+    
+\*=============================================================================================================*/
+
+
+/*=========================================*\
+  1.1 - RESETS
+\*=========================================*/
+
+body {
+  background-color: #ffffff;
+  color: #6c6c6c;
+  font-family:  'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  color: #38404a;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+
+/*=========================================*\
+  2.1 - FRAMEWORK OVERWITES
+\*=========================================*/
+
+
+/* Navigation
+ *----------------------------------------*/
+ .dso-navbar-default {
+  background-color: #ffffff;
+  background-image: none;
+  background-repeat: no-repeat;
+  border: 1px solid #ececec;
+  border-radius: 0;
+-webkit-box-shadow: 0px -9px 16px -4px rgba(64,64,64,1);
+-moz-box-shadow: 0px -9px 16px -4px rgba(64,64,64,1);
+box-shadow: 0px -9px 16px -4px rgba(64,64,64,1);
+}
+
+ .dsc-navbar {
+    margin-top:  12px;
+    position: relative;
+ }
+
+ .dso-navbar {
+    position: absolute;
+    top: -21px;
+    right: 0;
+ }
+
+.dso-nav-item {
+     font-family:  'Roboto Condensed', sans-serif;
+     list-style-type: none;
+     margin-left: 0 !important;
+}
+ .dso-nav-item .nav-link {
+    color:  #38404a;
+    padding: 1.938em 0.938em;
+    position: relative;
+    border-right: 1px solid #e0e0e0;
+}
+.dso-nav-item:first-child .nav-link {
+    border-left: 1px solid #e0e0e0;
+}
+
+.dso-nav-item .nav-link:hover {
+    background-color: #45d459;
+    border-right: 1px solid #ffffff;
+    color: #ffffff;
+}
+.dso-nav-item:first-child .nav-link:hover {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff
+}
+
+.dso-active .nav-link {
+border-left: 1px solid #ffffff ;
+border-right: 1px solid #ffffff ;
+background-color: #45d459;
+color: #ffffff;
+}
+
+
+.dso-dropdown-menu {
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: none;
+    float: left;
+    font-size: 1rem;
+    list-style: outside none none;
+    margin: 0;
+    min-width: 200px;
+    padding:  0;
+    position: absolute;
+    top: 86px;
+    left: -1px;
+    z-index: 1000;
+    text-align: left;   
+}
+.dropdown:hover .dso-dropdown-menu {
+    display: block;
+}
+.dso-dropdown-menu li a {
+    color:  #38404a;
+    border-bottom:  1px solid #e0e0e0;
+    display: block;
+    padding: 8px 14px;
+}
+.dso-dropdown-menu li:last-child a{
+    border-bottom: none;
+}
+
+.dso-dropdown-menu li a:hover {
+    color: #45d459;
+    text-decoration: none;
+}
+
+
+
+
+/* Buttons
+ *----------------------------------------*/
+.dso-btn {
+  display: inline-block;
+  padding: .375rem 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+   touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  border-radius: 0;
+}
+
+
+
+
+
+/*=========================================*\
+  3.1 CUSTOM STYLES
+\*=========================================*/
+
+/* Footer
+ *----------------------------------------*/
+ .dsc-footer {
+    background-color: #38404a;
+ }
+
+
+ /* Footer level One
+ *----------------------------------------*/
+
+ .dsc-footer .inner-primary {
+    padding: 1.563rem 0.9375rem;
+ }
+
+ .dsc-footer-section {
+    margin-bottom: 20px;
+ }
+ .dsc-footer-section ul {
+    margin: 15px 0 0;
+    padding: 0;
+ }
+
+ .dsc-footer-text-widget,
+ .dsc-footer-title,
+ .dsc-footer-link,
+ .dsc-footer-link a,
+ .dsc-address-item {
+    color: #abacac  ;
+ }
+
+
+ .dsc-footer-title {
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+ .dsc-footer-link {
+    list-style-type: none;
+    padding: 3px 0;
+    text-transform: capitalize;
+ }
+ .dsc-footer-link a:hover {
+    text-decoration: none;
+    color: #ff5d5d;
+ }
+
+
+/* Footer Section: About Us Summary
+ *----------------------------------------*/
+
+ .dsc-footer-text-widget {
+    margin: 15px 0 20px;
+}
+
+.dsc-social-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.dsc-social-fb {
+  background: url('assets/images/social-sprite.png') no-repeat 0 0;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+.dsc-social-fb:hover {
+  background: url('assets/images/social-sprite.png') no-repeat 0 -34px;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+
+.dsc-social-tw {
+  background: url('assets/images/social-sprite.png') no-repeat -34px 0;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+.dsc-social-tw:hover {
+  background: url('assets/images/social-sprite.png') no-repeat -34px -34px;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+
+.dsc-social-inst {
+  background: url('assets/images/social-sprite.png') no-repeat -69px 0;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+.dsc-social-inst:hover {
+  background: url('assets/images/social-sprite.png') no-repeat -69px -34px;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+
+.dsc-social-git {
+  background: url('assets/images/social-sprite.png') no-repeat -103px 0;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+.dsc-social-git:hover {
+  background: url('assets/images/social-sprite.png') no-repeat  -103px -34px;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+
+.dsc-social-mail {
+  background: url('assets/images/social-sprite.png') no-repeat -138px 0;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+.dsc-social-mail:hover {
+  background: url('assets/images/social-sprite.png') no-repeat -138px -34px;
+  background-size: 170px 66px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Footer Section: Our Location
+ *----------------------------------------*/
+.dsc-address-block:first-of-type {
+    margin-top: 18px;
+}
+
+.dsc-address-item {
+    display: block;
+}
+.dsc-location {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+
+/* Footer Leve Two
+ *----------------------------------------*/
+ .inner-secondary {
+    background-color: #192028;
+    padding: .9375rem;
+ }
+ .dsc-copyright,
+ .dsc-signature {
+    margin-bottom: 0;
+    color: #6c6c6c;
+ }
+ .dsc-copyright a,
+ .dsc-signature a {
+    color: #99a0a8;
+ }
+.dsc-copyright a:hover,
+.dsc-signature a:hover {
+    color: #ff6868;
+    text-decoration: none;
+ }
+
+ .dsc-signature {
+    text-align: right;
+ }
